@@ -1,0 +1,26 @@
+.navbar {
+    position: absolute;
+    width: 1680px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: #3D2963;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+    background-color: #3D2963;
+    position: absolute;
+    left: 3.93%;
+    right: 72.08%;
+    font-family: Comfortaa;
+    font-size: 24px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #F9F4F4;
+}
+
+*/
