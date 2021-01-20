@@ -3,20 +3,12 @@ import { MenuItems } from "./MenuItems"
 import './index.css'
 
 class Navbar extends Component {
-    state = { clicked: false }
-
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
-
+   
     render() {
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">VIOLÊNCIA CONTRA A MULHER</h1>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                <ul className='nav-menu'>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
