@@ -1,28 +1,35 @@
-import React, { Component } from 'react'
-import { NavItems } from './NavItems'
-
+import React, { Component } from 'react';
+import { MenuItems } from "./MenuItems"
+import './index.css'
 
 class Navbar extends Component {
-    render() {
-        return (
-            <nav className="navbar">
-                <h1 className="titulo">Violência contra a Mulher</h1>
+    state = { clicked: false }
 
-                <ul>
-                    {NavItems.map((item, index) => {
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+
+    render() {
+        return(
+            <nav className="NavbarItems">
+                <h1 className="navbar-logo">VIOLÊNCIA CONTRA A MULHER</h1>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                </div>
+                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                    {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
                                 <a className={item.cName} href={item.url}>
-                                    {item.title}
+                                {item.title}
                                 </a>
                             </li>
                         )
                     })}
-                   
                 </ul>
             </nav>
         )
     }
 }
 
-export default Navbar;
+export default Navbar
