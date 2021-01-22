@@ -1,0 +1,113 @@
+.footer {
+    font-family: Comfortaa;
+    background-color: rgba(61, 41, 99, 0.8);
+}
+
+/* denuncia */
+
+.footer-infos {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+.texto-denuncia {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    color: #F9F4F4;
+    padding-left: 20px;
+}
+
+p span {
+    display: block;
+    margin-bottom: -20px;
+}
+
+.info-btn {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 50vw;
+    justify-content: end;
+    margin-right: 2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+button.delegacia {
+    width: 192px;
+    height: 52px;
+    background-color: #9B51E0;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+button.disk-180 {
+    width: 192px;
+    height: 52px;
+    background-color: #F5F5F5;
+    color: #9B51E0;
+    border-color: #9B51E0;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+/* compartilhamento */
+
+.footer-share {
+    padding-top: 5px;
+    font-size: 18px;
+    background-color:#F5F5F5;
+    text-align: center;
+}
+
+.redes-sociais {
+    margin-bottom: 15px;
+}
+
+.icons {
+    border: none;
+    background-color: #F5F5F5;
+    outline: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+img.icones {
+    width:35px; /* you can use % */
+    height: auto;
+}
+
+.icons:hover {
+    color: red;
+}
+
+/* linha final */
+
+hr {
+	height:1px;
+	width: 90%;
+	border-width:0;
+    background-color: rgba(119, 119, 119, 0.5);;
+    margin-bottom: 25px;
+}
+
+.last-line {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 25px;
+}
