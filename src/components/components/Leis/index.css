@@ -32,14 +32,18 @@
   margin-top: 25px;
 }
 
-.card {
-  width: 100%;
-  height: 400px;
-  background-color: #ddb4f5;
-  color: #333;
-  font-size: 30px;
-  margin: 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Carrossel */
+
+h1.h1-item {
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+p.p-item {
+  font-weight: normal;
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 50px;
 }
