@@ -1,5 +1,6 @@
 .metodologia {
   background-color: rgba(102, 51, 153, 0.1);
+  position: relative;
 }
 
 /* titulo */
@@ -40,8 +41,8 @@
   line-height: 30px;
   letter-spacing: -0.015em;
   text-align: justify;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 /* botão mais infos */
@@ -66,5 +67,8 @@ button.btn-infos {
 .triangle-right {
   width: 150px;
   height: 350px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
