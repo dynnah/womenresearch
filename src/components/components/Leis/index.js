@@ -1,6 +1,5 @@
 import React from 'react';
-import Carrossel from 'react-elastic-carousel'
-import Card from './Card'
+import Carrossel from './Carrossel'
 import './index.css'
 
 
@@ -14,13 +13,7 @@ function Leis() {
           <p className="leis-sub-titulo">No Capítulo II, art. 7º, incisos I, II, III, IV e V, estão previstos cinco tipos de violência doméstica e familiar contra a mulher:</p>
         </div>
         <div className="carrossel">
-          <Carrossel>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </Carrossel>
+         <Carrossel />
         </div>
         
       </div>
