@@ -25,3 +25,21 @@
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
 }
+
+.carrossel {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 25px;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  background-color: #ddb4f5;
+  color: #333;
+  font-size: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

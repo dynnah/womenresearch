@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  text-align: center;
+  background-color:#f5f5f5;
   padding-bottom: 80px;
 }
 
@@ -26,6 +27,7 @@ P.tagline-text {
   align-items: center;  
   text-align: center;
   letter-spacing: -0.005em;
+  margin-top: 155px;
 }
 
 /* imagem */
@@ -40,3 +42,16 @@ P.tagline-text {
   height: 125px;
 }
 
+
+/* icons */
+
+.chevron {
+  width: 150px;
+  height: 150px;
+}
+
+button.chevron {
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+}
