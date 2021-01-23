@@ -10,8 +10,8 @@ function Footer() {
          <div className="footer-infos">
              <p className="texto-denuncia"><span>Caso você tenha sofrido algum tipo de violência, faça uma denúncia!</span><span>Clique em um dos botões ao lado para ser redirecionada.</span></p>
              <div className="info-btn">
-             <button className="delegacia" type="button" href="https://www.google.com">Delegacia Virtual</button>
-             <button className="disk-180">Ligue 180</button>
+             <a href="http://google.com/"><button className="delegacia">Delegacia Virtual</button></a>
+             <a href="http://google.com/"><button className="disk-180">Ligue 180</button></a>
              </div>
              
          </div>

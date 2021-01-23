@@ -1,0 +1,27 @@
+.leis {
+  background-color: whitesmoke;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.leis-title {
+  padding-top: 50px;
+}
+
+.leis-titulo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: -0.015em;
+}
+
+.leis-sub-titulo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
