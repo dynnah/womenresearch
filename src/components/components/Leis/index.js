@@ -5,7 +5,7 @@ import './index.css'
 
 function Leis() {
   return (
-      <div className="leis">
+      <div className="leis" id="leis">
         <div className="leis-title">
           <p className="leis-titulo">Lei Maria da Penha</p>
         </div>

@@ -6,7 +6,7 @@ import './index.css'
 
 function Footer() {
   return (
-      <div class="footer">
+      <div class="footer" id="contatos">
          <div className="footer-infos">
              <p className="texto-denuncia"><span>Caso você tenha sofrido algum tipo de violência, faça uma denúncia!</span><span>Clique em um dos botões ao lado para ser redirecionada.</span></p>
              <div className="info-btn">
