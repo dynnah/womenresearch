@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">VIOLÊNCIA CONTRA A MULHER</h1>
+                <h1 className="navbar-logo">- NOSSA VOZ -</h1>
                 <ul className='nav-menu'>
                     {MenuItems.map((item, index) => {
                         return (
