@@ -1,0 +1,116 @@
+.graficos {
+	background: rgba(102, 51, 153, 0.1);
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+h1.texto-principal {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 10px;
+	letter-spacing: -0.015em;
+	color: #000000;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+
+p.texto-secundario {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	letter-spacing: -0.015em;
+	margin-left: 200px;
+}
+
+p.tagline {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	letter-spacing: -0.015em;
+	color: #000000;
+	margin-left: 190px;
+}
+
+.brasil {
+	margin-top: 70px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 72px;
+	letter-spacing: -0.015em;
+	color: #9B51E0;
+}
+
+/* Quantidade de casos por ano */
+
+.caso-ano {
+	margin-top: 50px;
+}
+
+p.primeira-linha {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	letter-spacing: -0.015em;
+	margin-left: 150px;
+}
+
+p.segunda-linha {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: -0.015em;
+	margin-left: 150px;
+	margin-bottom: 50px;
+}
+
+/* Tipo de Violência */
+
+/* Faixa etária mais afetada */
+
+.faixa-etaria {
+	text-align: center;
+}
+
+p.terceira-linha {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	letter-spacing: -0.015em;
+}
+/* Etnia mais afetada */
+
+.etnia {
+	text-align: center;
+}
+
+/* Faixa etária versus etnia */
+
+.faixa-e-etnia {
+	text-align: center;
+}
+
+/* Quem comete esses crimes */
+
+.autores {
+	text-align: center;
+}
+
+/* imagens */
+
+.triangle-left {
+	width: 125px;
+  height: 400px;
+  position: absolute;
+	top: 0;
+	left: 10px;
+}
