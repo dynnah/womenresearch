@@ -4,7 +4,7 @@ import './index.css'
 
 function Graficos() {
   return (
-      <div className="graficos" id="graficos">
+      <div className="graficos" id="dados">
           <div className="texto-inicial">
             <h1 className="texto-principal">OS DADOS SÃO NÚMEROS</h1>
             <p className="texto-secundario">e os números são nomes</p>
