@@ -1,4 +1,6 @@
 import React from 'react';
+import triangleLeft from '../../../assets/triangle-left.png'
+import triangleRight from '../../../assets/triangle-right.png'
 import './index.css'
 
 
@@ -9,6 +11,7 @@ function Graficos() {
             <h1 className="texto-principal">OS DADOS SÃO NÚMEROS</h1>
             <p className="texto-secundario">e os números são nomes</p>
             <p className="tagline">A violência contra a mulher é um grande problema social e as consequências podem ser duradouras</p>
+						<img className="triangle-left" src={triangleLeft} alt="triangles"></img>
           </div>
 					<div className="brasil">
 						<h1>BRASIL</h1>
@@ -129,6 +132,7 @@ function Graficos() {
 					<hr />
 
 				</div>
+				<img className="triangle-right" src={triangleRight} alt="triangles"></img>
       </div>
   );
 }
