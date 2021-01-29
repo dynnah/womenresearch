@@ -12,10 +12,16 @@ export const MenuItems = [
     }, 
 
     {
-        title: 'Dados',
+        title: 'Dados Gerais',
         url: '#dados',
         cName: 'nav-links'
     }, 
+
+    {
+        title: 'Dados da Paraíba',
+        url: '#dados-pb',
+        cName: 'nav-links'
+    },
 
     {
         title: 'Contatos',

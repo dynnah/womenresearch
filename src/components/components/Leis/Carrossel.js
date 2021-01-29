@@ -9,7 +9,7 @@ function Carrossel() {
     <div className="App">
       <Carousel>
         <Item>
-          <h1 className="h1-item">Violência Fisica</h1>
+          <h1 className="h1-item">Violência Física</h1>
           <p className="p-item">Entendida como qualquer conduta que ofenda a integridade ou saúde corporal da mulher.<br/>Exemplos: Espacamento; Atirar objetos, sacudir e apertar os braços; Estragulamento ou sufocamento; Lesões com objetivos cortantes ou perfurantes; Ferimentos causados por queimaduras ou armas de fogo; Tortura;</p>
         </Item>
         <Item>
