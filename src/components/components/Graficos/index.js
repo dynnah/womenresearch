@@ -168,6 +168,7 @@ function Graficos() {
 						<hr />
 						<div className="caso-anopb">
 							<p className="primeira-linhapb">Quantidade de casos por Município:</p> 
+							<p className="segunda-linhavl">No ano de 2020</p>
 							<div className="grafico-municipiopb">
 								<BarChart
         					width={1000}
@@ -191,6 +192,7 @@ function Graficos() {
 						<div className="faixaetaria-pb">
 							<div className="">
 								<p className="terceira-linha">Faixa etária mais afetada</p>
+								<p className="segunda-linhavl">No ano de 2020</p>
 							</div>
 							<div className="grafico-idadepb">
 								<BarChart
