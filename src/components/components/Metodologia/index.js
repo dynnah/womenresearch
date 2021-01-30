@@ -18,7 +18,7 @@ function Metodologia() {
           <p className="text">É preciso entender que as políticas públicas de combate e educação, e as ações de ONGs (Organizações Não Governamentais) têm um impacto relevante no combate desses índices. Por isso, a existência de ferramentas que apoiem o processo de planejamento de ações e entendimento do problema é tão relevante. </p>
         </div>
         <div className="btn-metodologia"> 
-          <a href="http://google.com/"><button className="btn-infos">Mais Informações</button></a>
+          <a href="https://www.onumulheres.org.br/wp-content/uploads/2019/06/Progress-of-the-worlds-women-2019-2020-en.pdf"><button className="btn-infos">Mais Informações</button></a>
         </div>
         <img className="triangle-right" src={TriangleRight} alt="Triangle"></img>
       </div>
