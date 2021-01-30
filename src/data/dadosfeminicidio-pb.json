@@ -1,0 +1,450 @@
+[
+  {
+    "Data": "1/4/2020",
+    "Hora": "4:30:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 0
+  },
+  {
+    "Data": "1/4/2020",
+    "Hora": "21:43:00",
+    "Município": "Campina Grande",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 21
+  },
+  {
+    "Data": "1/4/2020",
+    "Hora": "21:43:00",
+    "Município": "Campina Grande",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 77
+  },
+  {
+    "Data": "1/7/2020",
+    "Hora": "20:00:00",
+    "Município": "Catolé do Rocha",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 18
+  },
+  {
+    "Data": "1/7/2020",
+    "Hora": "20:00:00",
+    "Município": "Catolé do Rocha",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 20
+  },
+  {
+    "Data": "1/9/2020",
+    "Hora": "7:06:00",
+    "Município": "Puxinanã",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 21
+  },
+  {
+    "Data": "1/13/2020",
+    "Hora": "13:58:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Pedradas",
+    "Sexo": "Feminino",
+    "Idade": 0
+  },
+  {
+    "Data": "1/17/2020",
+    "Hora": "20:39:00",
+    "Município": "Santa Rita",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 0
+  },
+  {
+    "Data": "1/18/2020",
+    "Hora": "18:06:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 38
+  },
+  {
+    "Data": "1/24/2020",
+    "Hora": "21:40:00",
+    "Município": "Patos",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 28
+  },
+  {
+    "Data": "1/31/2020",
+    "Hora": "21:18:00",
+    "Município": "Itabaiana",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 30
+  },
+  {
+    "Data": "2/1/2020",
+    "Hora": "6:43:00",
+    "Município": "Monteiro",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 48
+  },
+  {
+    "Data": "2/1/2020",
+    "Hora": "17:04:00",
+    "Município": "Campina Grande",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 43
+  },
+  {
+    "Data": "2/2/2020",
+    "Hora": "21:35:00",
+    "Município": "Caaporã",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 39
+  },
+  {
+    "Data": "2/3/2020",
+    "Hora": "3:40:00",
+    "Município": "Bayeux",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 26
+  },
+  {
+    "Data": "2/4/2020",
+    "Hora": "1:51:00",
+    "Município": "Campina Grande",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 52
+  },
+  {
+    "Data": "2/5/2020",
+    "Hora": "13:37:00",
+    "Município": "Piancó",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 62
+  },
+  {
+    "Data": "2/19/2020",
+    "Hora": "12:03:00",
+    "Município": "Alhandra",
+    "Arma Utilizada": "Indeterminado",
+    "Sexo": "Feminino",
+    "Idade": 31
+  },
+  {
+    "Data": "2/19/2020",
+    "Hora": "20:49:00",
+    "Município": "Patos",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 17
+  },
+  {
+    "Data": "2/29/2020",
+    "Hora": "20:52:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 32
+  },
+  {
+    "Data": "3/11/2020",
+    "Hora": "12:19:00",
+    "Município": "Campina Grande",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 82
+  },
+  {
+    "Data": "3/20/2020",
+    "Hora": "15:54:00",
+    "Município": "Cruz do Espírito Santo",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 53
+  },
+  {
+    "Data": "3/24/2020",
+    "Hora": "18:13:00",
+    "Município": "Cajazeiras",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 46
+  },
+  {
+    "Data": "3/24/2020",
+    "Hora": "23:41:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 62
+  },
+  {
+    "Data": "3/28/2020",
+    "Hora": "6:01:00",
+    "Município": "Santa Rita",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 29
+  },
+  {
+    "Data": "4/8/2020",
+    "Hora": "14:20:00",
+    "Município": "Santa Rita",
+    "Arma Utilizada": "Indeterminado",
+    "Sexo": "Feminino",
+    "Idade": 0
+  },
+  {
+    "Data": "4/14/2020",
+    "Hora": "9:40:00",
+    "Município": "Catolé do Rocha",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 41
+  },
+  {
+    "Data": "4/14/2020",
+    "Hora": "10:31:00",
+    "Município": "Cruz do Espírito Santo",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 49
+  },
+  {
+    "Data": "4/18/2020",
+    "Hora": "16:54:00",
+    "Município": "Sousa",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 33
+  },
+  {
+    "Data": "4/21/2020",
+    "Hora": "2:00:00",
+    "Município": "Rio Tinto",
+    "Arma Utilizada": "Enforcamento",
+    "Sexo": "Feminino",
+    "Idade": 20
+  },
+  {
+    "Data": "4/21/2020",
+    "Hora": "13:25:00",
+    "Município": "Cachoeira dos Índios",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 44
+  },
+  {
+    "Data": "4/25/2020",
+    "Hora": "0:00:00",
+    "Município": "São Bento",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 20
+  },
+  {
+    "Data": "4/29/2020",
+    "Hora": "21:22:00",
+    "Município": "Itatuba",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 20
+  },
+  {
+    "Data": "5/2/2020",
+    "Hora": "22:21:00",
+    "Município": "Solânea",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 16
+  },
+  {
+    "Data": "5/3/2020",
+    "Hora": "23:20:00",
+    "Município": "Pilar",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 41
+  },
+  {
+    "Data": "5/4/2020",
+    "Hora": "13:30:00",
+    "Município": "Catolé do Rocha",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 17
+  },
+  {
+    "Data": "5/4/2020",
+    "Hora": "13:30:00",
+    "Município": "Catolé do Rocha",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 18
+  },
+  {
+    "Data": "5/4/2020",
+    "Hora": "17:24:00",
+    "Município": "Sousa",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 40
+  },
+  {
+    "Data": "5/17/2020",
+    "Hora": "2:22:00",
+    "Município": "Gurinhém",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 26
+  },
+  {
+    "Data": "5/17/2020",
+    "Hora": "5:26:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 41
+  },
+  {
+    "Data": "5/18/2020",
+    "Hora": "23:16:00",
+    "Município": "Bayeux",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 21
+  },
+  {
+    "Data": "5/19/2020",
+    "Hora": "3:30:00",
+    "Município": "Marizópolis",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 30
+  },
+  {
+    "Data": "5/26/2020",
+    "Hora": "20:50:00",
+    "Município": "Queimadas",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 19
+  },
+  {
+    "Data": "6/3/2020",
+    "Hora": "20:43:00",
+    "Município": "Campina Grande",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 48
+  },
+  {
+    "Data": "6/8/2020",
+    "Hora": "2:30:00",
+    "Município": "Arara",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 22
+  },
+  {
+    "Data": "6/13/2020",
+    "Hora": "8:01:00",
+    "Município": "Remígio",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 40
+  },
+  {
+    "Data": "6/26/2020",
+    "Hora": "14:51:00",
+    "Município": "Bayeux",
+    "Arma Utilizada": "Asfixia",
+    "Sexo": "Feminino",
+    "Idade": 39
+  },
+  {
+    "Data": "7/19/2020",
+    "Hora": "9:09:00",
+    "Município": "Monteiro",
+    "Arma Utilizada": "Indeterminado",
+    "Sexo": "Feminino",
+    "Idade": 21
+  },
+  {
+    "Data": "7/23/2020",
+    "Hora": "21:21:00",
+    "Município": "Cruz do Espírito Santo",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 14
+  },
+  {
+    "Data": "7/29/2020",
+    "Hora": "14:00:00",
+    "Município": "Caldas Brandão",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 19
+  },
+  {
+    "Data": "8/3/2020",
+    "Hora": "23:35:00",
+    "Município": "Gado Bravo",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 59
+  },
+  {
+    "Data": "8/10/2020",
+    "Hora": "0:55:00",
+    "Município": "Zabelê",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 15
+  },
+  {
+    "Data": "8/12/2020",
+    "Hora": "18:59:00",
+    "Município": "João Pessoa",
+    "Arma Utilizada": "Arma Branca",
+    "Sexo": "Feminino",
+    "Idade": 42
+  },
+  {
+    "Data": "8/25/2020",
+    "Hora": "13:00:00",
+    "Município": "Bayeux",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 35
+  },
+  {
+    "Data": "8/26/2020",
+    "Hora": "21:57:00",
+    "Município": "Puxinanã",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 31
+  },
+  {
+    "Data": "8/31/2020",
+    "Hora": "5:00:00",
+    "Município": "Cacimbas",
+    "Arma Utilizada": "Arma de Fogo",
+    "Sexo": "Feminino",
+    "Idade": 20
+  }
+]

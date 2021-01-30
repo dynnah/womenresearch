@@ -1,10 +1,110 @@
-import React from 'react';
+import React, { useState } from 'react'
 import triangleLeft from '../../../assets/triangle-left.png'
 import triangleRight from '../../../assets/triangle-right.png'
+import dadosFeminicidioPb from '../../../data/dadosfeminicidio-pb.json'
+import violenciaPb from '../../../data/violencia-pb.json'
+import etniaBr from '../../../data/etnia-brasil.json'
+import anoBr from '../../../data/ano-brasil.json'
+import violenciaBr from '../../../data/violencia-brasil.json'
+import {
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Pie, PieChart, Sector
+} from 'recharts';
 import './index.css'
+
+const cities = ['Joao Pessoa', 'Campina Grande', 'Bayeux', 'Santa Rita', 'Patos']
+const dataToChart = cities.map(city => {
+	const cases = violenciaPb.filter((element) => element['Município'].toLowerCase().includes(city.toLowerCase()))
+	return {
+		['Município']: city,
+		['Ocorrências']: cases.length
+	}
+})
+
+
+const faixasEtarias = [{min: 15, max: 25}, {min: 26, max: 35}, {min: 36, max: 45}, {min: 46, max: 55}, {min: 56, max: 65}, {min: 66, max: 100} ]
+	const ageToChart = faixasEtarias.map(faixaetaria => {
+		const cases = dadosFeminicidioPb.filter((element) => element['Idade'] >= faixaetaria.min && element['Idade'] <= faixaetaria.max)
+		return {
+			['Faixa Etária']: `${faixaetaria.min}-${faixaetaria.max}`,
+			['Ocorrências']: cases.length
+
+		}
+	})
+
+const etnias = ['Parda', 'Branca', 'Amarela', 'Preta', 'Não Especificado']
+const etniaToChart = etnias.map(etnia => {
+	const cases = etniaBr.filter((element) => element['Etnia'].toLowerCase().includes(etnia.toLowerCase()))
+	return {
+		['Etnia']: etnia,
+		['Ocorrências']: cases.length
+	}
+})
+
+const violencias = ['Violência Física', 'Violência Sexual', 'Violência Psicológica', 'Violência Moral', 'Violência Patrimonial']
+const violenciaToChart = violencias.map(violencia => {
+	const cases = violenciaBr.filter((element) => element['Ocorrência'].toLowerCase().includes(violencia.toLowerCase()))
+	return {
+		name: violencia,
+		quantidade: cases.length
+	}
+})
+
+
+const renderActiveShape = (props) => {
+  const RADIAN = Math.PI / 180;
+  const {
+    cx, cy, midAngle, innerRadius, outerRadius, startAngle, endAngle,
+    fill, payload, percent, value,
+  } = props;
+  const sin = Math.sin(-RADIAN * midAngle);
+  const cos = Math.cos(-RADIAN * midAngle);
+  const sx = cx + (outerRadius + 10) * cos;
+  const sy = cy + (outerRadius + 10) * sin;
+  const mx = cx + (outerRadius + 30) * cos;
+  const my = cy + (outerRadius + 30) * sin;
+  const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+  const ey = my;
+  const textAnchor = cos >= 0 ? 'start' : 'end';
+
+  return (
+    <g>
+      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>{payload.name}</text>
+      <Sector
+        cx={cx}
+        cy={cy}
+        innerRadius={innerRadius}
+        outerRadius={outerRadius}
+        startAngle={startAngle}
+        endAngle={endAngle}
+        fill={fill}
+      />
+      <Sector
+        cx={cx}
+        cy={cy}
+        startAngle={startAngle}
+        endAngle={endAngle}
+        innerRadius={outerRadius + 6}
+        outerRadius={outerRadius + 10}
+        fill={fill}
+      />
+      <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />
+      <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
+      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill="#333">{`${value}`}</text>
+      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} dy={18} textAnchor={textAnchor} fill="#999">
+        {`(Rate ${(percent * 100).toFixed(2)}%)`}
+      </text>
+    </g>
+  );
+};
 
 
 function Graficos() {
+	const [activeIndex, setActiveIndex] = useState(0)
+
+	const onPieEnter = (data, index) => {
+		setActiveIndex(index)
+	};
+	
   return (
       <div className="graficos" id="dados">
           <div className="texto-inicial">
@@ -18,116 +118,107 @@ function Graficos() {
 						<hr />
 					</div>
 					<div className="caso-ano">
-							<div className="before-select">
-								<p className="primeira-linha">Quantidade de casos por ano:</p> 
-								<p className="segunda-linha">A cada 100 mil habitantes</p>
+							<div className="caso-anobr">
+								<p className="primeira-linhabr">Quantidade de casos por ano:</p> 
 							</div>
-							<div className="select">
-								<select name="format" id="format">
-									<option selected disabled>Selecione o ano</option>
-									<option value="2015">2015</option>
-									<option value="2016">2016</option>
-									<option value="2017">2017</option>
-									<option value="2018">2018</option>
-									<option value="2019">2019</option>
-								</select>
-							</div>
-						</div>
+			
+					</div>
 					<hr />
 					<div className="tipos-violencia">
 							<div className="before-select">
-								<p className="primeira-linha">Tipos de violência:</p>
+								<p className="primeira-linha">Ocorrência dos Tipos de violência:</p>
+								<p className="segunda-linha">Entre os anos 2009 - 2018</p>
 							</div>
-							<div className="select">
-								<select name="format" id="format">
-									<option selected disabled>Selecione o tipo</option>
-									<option value="fisica">Violência Física</option>
-									<option value="psicologica">Violência Psicológica</option>
-									<option value="moral">Violência Moral</option>
-									<option value="sexual">Violência Sexual</option>
-									<option value="patrimonial">Violência Patrimonial</option>
-								</select>
-							</div>
-							<div className="before-select">
-								<p className="primeira-linha">Ano:</p>
-							</div>
-							<div className="select">
-								<select name="format" id="format">
-									<option selected disabled>Selecione o ano</option>
-									<option value="2015">2015</option>
-									<option value="2016">2016</option>
-									<option value="2017">2017</option>
-									<option value="2018">2018</option>
-									<option value="2019">2019</option>
-								</select>
+							<div className="grafico-municipiopb">
+								<PieChart width={400} height={400}>
+        					<Pie
+										activeIndex={activeIndex}
+										activeShape={renderActiveShape}
+          					data={violenciaToChart}
+          					cx={200}
+          					cy={200}
+          					innerRadius={60}
+          					outerRadius={80}
+          					fill="#8884d8"
+										dataKey="quantidade"
+										onMouseOver={onPieEnter}
+        					/>
+      					</PieChart>
 							</div>
 						</div>
 					<hr />
-					<div className="faixa-etaria">
-						<p className="terceira-linha">Faixa etária mais afetada</p>
-						<hr />
-					</div>
 					<div className="etnia">
 						<p className="terceira-linha">Etnia mais afetada</p>
-						<hr />
-					</div>
-					<div className="faixa-e-etnia">
-						<p className="terceira-linha">Faixa Etária versus Etnia</p>
-						<hr />
-					</div>
-					<div className="autores">
-						<p className="terceira-linha">Quem comete esses crimes?</p>
+						<p className="segunda-linha">Entre os anos 2009 - 2018</p>
+						<div className="grafico-municipiopb">
+								<BarChart
+        					width={1000}
+        					height={500}
+        					data={etniaToChart}
+        					margin={{
+          					top: 5, right: 30, left: 20, bottom: 5,
+									}}
+								>
+									<CartesianGrid strokeDasharray="3 3" />
+									<XAxis dataKey="Etnia" />
+									<YAxis />
+									<Tooltip />
+									<Legend />
+									<Bar dataKey="Ocorrências" fill="#9B51E0" />
+								</BarChart>
+							</div>
 						<hr />
 					</div>
 					<div className="dados-pb" id="dados-pb">
-						<div className="brasil">
+						<div className="paraiba">
 							<h1>PARAÍBA</h1>
 							<hr />
 						</div>
-						<div className="caso-ano">
-							<div className="before-select">
-								<p className="primeira-linha">Quantidade de casos por ano:</p> 
-								<p className="segunda-linha">A cada 100 mil habitantes</p>
-							</div>
-							<div className="select">
-								<select name="format" id="format">
-									<option selected disabled>Selecione o ano</option>
-									<option value="2015">2015</option>
-									<option value="2016">2016</option>
-									<option value="2017">2017</option>
-									<option value="2018">2018</option>
-									<option value="2019">2019</option>
-								</select>
+						<div className="caso-anopb">
+							<p className="primeira-linhapb">Quantidade de casos por Município:</p> 
+							<div className="grafico-municipiopb">
+								<BarChart
+        					width={1000}
+        					height={500}
+        					data={dataToChart}
+        					margin={{
+          					top: 5, right: 30, left: 20, bottom: 5,
+									}}
+								>
+									<CartesianGrid strokeDasharray="3 3" />
+									<XAxis dataKey="Município" />
+									<YAxis />
+									<Tooltip />
+									<Legend />
+									<Bar dataKey="Ocorrências" fill="#9B51E0" />
+								</BarChart>
 							</div>
 						</div>
 						<hr />
-						<div className="tipos-violencia">
-							<div className="before-select">
-								<p className="primeira-linha">Tipos de violência:</p>
+
+						<div className="faixaetaria-pb">
+							<div className="">
+								<p className="terceira-linha">Faixa etária mais afetada</p>
 							</div>
-							<div className="select">
-								<select name="format" id="format">
-									<option selected disabled>Selecione o tipo</option>
-									<option value="fisica">Violência Física</option>
-									<option value="psicologica">Violência Psicológica</option>
-									<option value="moral">Violência Moral</option>
-									<option value="sexual">Violência Sexual</option>
-									<option value="patrimonial">Violência Patrimonial</option>
-								</select>
+							<div className="grafico-idadepb">
+								<BarChart
+        					width={1000}
+        					height={500}
+        					data={ageToChart}
+        					margin={{
+          					top: 5, right: 30, left: 20, bottom: 5,
+									}}
+								>
+									<CartesianGrid strokeDasharray="3 3" />
+									<XAxis dataKey="Faixa Etária" />
+									<YAxis />
+									<Tooltip />
+									<Legend />
+									<Bar dataKey="Ocorrências" fill="#9B51E0" />
+								</BarChart>
 							</div>
-							<div className="before-select">
-								<p className="primeira-linha">Ano:</p>
-							</div>
-							<div className="select">
-								<select name="format" id="format">
-									<option selected disabled>Selecione o ano</option>
-									<option value="2015">2015</option>
-									<option value="2016">2016</option>
-									<option value="2017">2017</option>
-									<option value="2018">2018</option>
-									<option value="2019">2019</option>
-								</select>
-							</div>
+							
+							
 						</div>
 					<hr />
 
