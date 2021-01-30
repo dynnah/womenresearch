@@ -90,12 +90,45 @@ p.segunda-linha {
 	margin-bottom: 50px;
 }
 
+.grafico-anobr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
 /* Tipo de Violência */
 
-.tipos-violencia {
-	margin-top: 50px;
-	display: flex;
+.violencia {
+	text-align: center;
 }
+
+.primeira-linhavl {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	letter-spacing: -0.015em;
+	margin-top: 55px;
+} 
+
+.segunda-linhavl {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: -0.015em;
+	margin-bottom: 50px;
+}
+
+.grafico-violenciabr {
+  display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 80px;
+	margin-left: 200px;
+}
+
 
 /* Faixa etária mais afetada */
 
@@ -114,6 +147,15 @@ p.terceira-linha {
 
 .etnia {
 	text-align: center;
+	margin-top: 50px;
+}
+
+.grafico-etnia {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 /* Faixa etária versus etnia */
@@ -132,6 +174,7 @@ p.terceira-linha {
 
 .paraiba {
 	margin-top: 70px;
+	margin-bottom: 70px;
 	text-align: center;
 	font-family: Montserrat;
 	font-style: normal;

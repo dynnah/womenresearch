@@ -20,17 +20,6 @@ const dataToChart = cities.map(city => {
 	}
 })
 
-
-const faixasEtarias = [{min: 15, max: 25}, {min: 26, max: 35}, {min: 36, max: 45}, {min: 46, max: 55}, {min: 56, max: 65}, {min: 66, max: 100} ]
-	const ageToChart = faixasEtarias.map(faixaetaria => {
-		const cases = dadosFeminicidioPb.filter((element) => element['Idade'] >= faixaetaria.min && element['Idade'] <= faixaetaria.max)
-		return {
-			['Faixa Etária']: `${faixaetaria.min}-${faixaetaria.max}`,
-			['Ocorrências']: cases.length
-
-		}
-	})
-
 const etnias = ['Parda', 'Branca', 'Amarela', 'Preta', 'Não Especificado']
 const etniaToChart = etnias.map(etnia => {
 	const cases = etniaBr.filter((element) => element['Etnia'].toLowerCase().includes(etnia.toLowerCase()))
@@ -48,6 +37,16 @@ const violenciaToChart = violencias.map(violencia => {
 		quantidade: cases.length
 	}
 })
+
+const faixasEtarias = [{min: 15, max: 25}, {min: 26, max: 35}, {min: 36, max: 45}, {min: 46, max: 55}, {min: 56, max: 65}, {min: 66, max: 100} ]
+	const ageToChart = faixasEtarias.map(faixaetaria => {
+		const cases = dadosFeminicidioPb.filter((element) => element['Idade'] >= faixaetaria.min && element['Idade'] <= faixaetaria.max)
+		return {
+			['Faixa Etária']: `${faixaetaria.min}-${faixaetaria.max}`,
+			['Ocorrências']: cases.length
+
+		}
+	})
 
 
 const renderActiveShape = (props) => {
@@ -116,30 +115,23 @@ function Graficos() {
 					<div className="brasil">
 						<h1>BRASIL</h1>
 						<hr />
-					</div>
-					<div className="caso-ano">
-							<div className="caso-anobr">
-								<p className="primeira-linhabr">Quantidade de casos por ano:</p> 
-							</div>
-			
-					</div>
-					<hr />
+					</div>			
 					<div className="tipos-violencia">
-							<div className="before-select">
-								<p className="primeira-linha">Ocorrência dos Tipos de violência:</p>
-								<p className="segunda-linha">Entre os anos 2009 - 2018</p>
+							<div className="violencia">
+								<p className="primeira-linhavl">Ocorrência dos Tipos de Violência:</p>
+								<p className="segunda-linhavl">Entre os anos 2009 - 2018</p>
 							</div>
-							<div className="grafico-municipiopb">
-								<PieChart width={400} height={400}>
+							<div className="grafico-violenciabr">
+								<PieChart width={800} height={400}>
         					<Pie
 										activeIndex={activeIndex}
 										activeShape={renderActiveShape}
           					data={violenciaToChart}
-          					cx={200}
+          					cx={300}
           					cy={200}
-          					innerRadius={60}
-          					outerRadius={80}
-          					fill="#8884d8"
+          					innerRadius={140}
+          					outerRadius={160}
+          					fill="#9B51E0"
 										dataKey="quantidade"
 										onMouseOver={onPieEnter}
         					/>
@@ -150,7 +142,7 @@ function Graficos() {
 					<div className="etnia">
 						<p className="terceira-linha">Etnia mais afetada</p>
 						<p className="segunda-linha">Entre os anos 2009 - 2018</p>
-						<div className="grafico-municipiopb">
+						<div className="grafico-etnia">
 								<BarChart
         					width={1000}
         					height={500}
@@ -172,8 +164,8 @@ function Graficos() {
 					<div className="dados-pb" id="dados-pb">
 						<div className="paraiba">
 							<h1>PARAÍBA</h1>
-							<hr />
 						</div>
+						<hr />
 						<div className="caso-anopb">
 							<p className="primeira-linhapb">Quantidade de casos por Município:</p> 
 							<div className="grafico-municipiopb">
