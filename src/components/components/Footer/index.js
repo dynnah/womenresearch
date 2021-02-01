@@ -17,9 +17,9 @@ function Footer() {
          </div>
          <div className="footer-share">
              <p>compartilhe o projeto</p>
-             <a href="http://google.com/"><button className="icons"><img className="icones" src={Facebook} alt="Facebook Logo"></img></button></a>
-             <a href="http://google.com/"><button className="icons"><img className="icones" src={Instagram} alt="Instagram Logo"></img></button></a>
-             <a href="http://google.com/"><button className="icons"><img className="icones" src={Twitter} alt="Twitter Logo"></img></button></a>
+             <a href="http://facebook.com/"><button className="icons"><img className="icones" src={Facebook} alt="Facebook Logo"></img></button></a>
+             <a href="http://instagram.com/"><button className="icons"><img className="icones" src={Instagram} alt="Instagram Logo"></img></button></a>
+             <a href="http://twitter.com/"><button className="icons"><img className="icones" src={Twitter} alt="Twitter Logo"></img></button></a>
              
              <hr />
 
