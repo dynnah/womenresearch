@@ -48,6 +48,17 @@ p.tagline {
 	color: #9B51E0;
 }
 
+
+/* mapa */
+
+.grafico-violenciaestado {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
 /* Quantidade de casos por ano */
 
 .caso-ano {
@@ -96,6 +107,43 @@ p.segunda-linha {
 	display: flex;
 	justify-content: center;
 }
+
+/* Violência por Estado */
+
+.violencia-estado {
+	text-align: center;
+}
+
+.primeira-linhaes {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	letter-spacing: -0.015em;
+	margin-top: 55px;
+	color: black;
+	margin-bottom: 0px;
+} 
+
+.segunda-linhaes {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: -0.015em;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	color: black;
+}
+
+.grafico-violenciaestado {
+  display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 80px;
+	margin-left: 200px;
+}
+
 
 /* Tipo de Violência */
 
@@ -158,16 +206,19 @@ p.terceira-linha {
 	margin-bottom: 50px;
 }
 
-/* Faixa etária versus etnia */
+/* Etnia versus Ocorrencia */
 
-.faixa-e-etnia {
+.etnia-ocorrencia {
 	text-align: center;
+	margin-top: 50px;
 }
 
-/* Quem comete esses crimes */
-
-.autores {
-	text-align: center;
+.grafico-etnia-ocorrencia {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 /* casos ano pb */
@@ -268,7 +319,6 @@ select::-ms-expand {
 .select:hover::after {
 	color: whitesmoke;
 }
-
 
 /* imagens */
 

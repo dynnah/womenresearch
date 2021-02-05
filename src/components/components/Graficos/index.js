@@ -4,7 +4,7 @@ import triangleRight from '../../../assets/triangle-right.png'
 import dadosFeminicidioPb from '../../../data/dadosfeminicidio-pb.json'
 import violenciaPb from '../../../data/violencia-pb.json'
 import etniaBr from '../../../data/etnia-brasil.json'
-import anoBr from '../../../data/ano-brasil.json'
+import etniaOcorrencia from '../../../data/etnia_ocorrencia.json'
 import violenciaBr from '../../../data/violencia-brasil.json'
 import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Pie, PieChart, Sector
@@ -20,7 +20,7 @@ const dataToChart = cities.map(city => {
 	}
 })
 
-const etnias = ['Parda', 'Branca', 'Amarela', 'Preta', 'Não Especificado']
+const etnias = ['Parda', 'Branca', 'Amarela', 'Preta', 'Indígena','Não Especificado']
 const etniaToChart = etnias.map(etnia => {
 	const cases = etniaBr.filter((element) => element['Etnia'].toLowerCase().includes(etnia.toLowerCase()))
 	return {
@@ -28,6 +28,7 @@ const etniaToChart = etnias.map(etnia => {
 		['Ocorrências']: cases.length
 	}
 })
+
 
 const violencias = ['Violência Física', 'Violência Sexual', 'Violência Psicológica', 'Violência Moral', 'Violência Patrimonial']
 const violenciaToChart = violencias.map(violencia => {
@@ -104,6 +105,7 @@ function Graficos() {
 		setActiveIndex(index)
 	};
 	
+
   return (
       <div className="graficos" id="dados">
           <div className="texto-inicial">
@@ -114,6 +116,14 @@ function Graficos() {
           </div>
 					<div className="brasil">
 						<h1>BRASIL</h1>
+						<div className="violencia">
+							<div className="violencia-estado">
+								<p className="primeira-linhaes">Estado com mais ocorrências:</p>
+								<p className="segunda-linhaes">Entre os anos 2009 - 2018</p>
+							</div>
+							<div className="grafico-violenciaestado">
+							</div>
+						</div>
 						<hr />
 					</div>			
 					<div className="tipos-violencia">
@@ -156,11 +166,21 @@ function Graficos() {
 									<YAxis />
 									<Tooltip />
 									<Legend />
-									<Bar dataKey="Ocorrências" fill="#9B51E0" />
+									<Bar dataKey="Ocorrências" fill="#3D2963" />
 								</BarChart>
 							</div>
 						<hr />
 					</div>
+					
+					<div className="etnia-ocorrencia">
+						<p className="terceira-linha">Tipo de Violência <i>versus</i> Etnia</p>
+						<p className="segunda-linha">Entre os anos 2009 - 2018</p>
+						<div className="grafico-etnia-ocorrencia">
+								
+							</div>
+						<hr />
+					</div>
+					
 					<div className="dados-pb" id="dados-pb">
 						<div className="paraiba">
 							<h1>PARAÍBA</h1>
@@ -208,7 +228,7 @@ function Graficos() {
 									<YAxis />
 									<Tooltip />
 									<Legend />
-									<Bar dataKey="Ocorrências" fill="#9B51E0" />
+									<Bar dataKey="Ocorrências" fill="#3D2963" />
 								</BarChart>
 							</div>
 							
