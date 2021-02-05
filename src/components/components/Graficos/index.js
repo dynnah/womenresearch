@@ -39,6 +39,27 @@ const violenciaToChart = violencias.map(violencia => {
 	}
 })
 
+const ocorrencias = ['Violência Física', 'Violência Sexual', 'Violência Psicológica', 'Violência Patrimonial']
+
+const dadosToChart = ocorrencias.map(violencia => {
+ const etniasResult = {}
+ etniaOcorrencia.forEach(dado => {
+	 if (violencia.toLowerCase() === dado["Ocorrência"].toLowerCase()) {
+		 if (etniasResult[dado["Etnia"].toLowerCase()]) {
+			etniasResult[dado["Etnia"].toLowerCase()] += 1
+		 } else {
+			etniasResult[dado["Etnia"].toLowerCase()] = 1
+		 }
+	 }
+ })
+ 	return {
+		 violencia: violencia,
+		 ...etniasResult,
+	 }
+})
+
+
+
 const faixasEtarias = [{min: 15, max: 25}, {min: 26, max: 35}, {min: 36, max: 45}, {min: 46, max: 55}, {min: 56, max: 65}, {min: 66, max: 100} ]
 	const ageToChart = faixasEtarias.map(faixaetaria => {
 		const cases = dadosFeminicidioPb.filter((element) => element['Idade'] >= faixaetaria.min && element['Idade'] <= faixaetaria.max)
@@ -97,7 +118,33 @@ const renderActiveShape = (props) => {
   );
 };
 
+const etniasConfig = [
+	{
+	datakey: 'amarela',
+	color: '#9b51e0',
+	},
+	{
+		datakey: 'branca',
+		color: '#8044b7',
+	},
+	{
+		datakey: 'indígena',
+		color: '#66388f',
+	},
+	{
+		datakey: 'não especificado',
+		color: '#4d2c6a',
+	},
+	{
+		datakey: 'parda',
+		color: '#352046',
+	},
+	{
+		datakey: 'preta',
+		color: '#1e1426',
+	},
 
+]
 function Graficos() {
 	const [activeIndex, setActiveIndex] = useState(0)
 
@@ -141,7 +188,7 @@ function Graficos() {
           					cy={200}
           					innerRadius={140}
           					outerRadius={160}
-          					fill="#9B51E0"
+          					fill="#8044b7"
 										dataKey="quantidade"
 										onMouseOver={onPieEnter}
         					/>
@@ -166,18 +213,36 @@ function Graficos() {
 									<YAxis />
 									<Tooltip />
 									<Legend />
-									<Bar dataKey="Ocorrências" fill="#3D2963" />
+									<Bar dataKey="Ocorrências" fill="#8044b7" />
 								</BarChart>
 							</div>
 						<hr />
 					</div>
 					
 					<div className="etnia-ocorrencia">
-						<p className="terceira-linha">Tipo de Violência <i>versus</i> Etnia</p>
+						<p className="terceira-linha">Etnia mais afetada por Tipo de Violência</p>
 						<p className="segunda-linha">Entre os anos 2009 - 2018</p>
 						<div className="grafico-etnia-ocorrencia">
-								
-							</div>
+							<BarChart
+    				    width={1000}
+    				    height={800}
+    				    data={dadosToChart}
+    				    margin={{
+    				      top: 20, right: 30, left: 20, bottom: 5,
+    				    }}
+    				  >
+    				    <CartesianGrid strokeDasharray="3 3" />
+    				    <XAxis dataKey="violencia" />
+    				    <YAxis />
+    				    <Tooltip />
+    				    <Legend />
+								{
+									etniasConfig.map(etnia => (
+										<Bar dataKey={etnia.datakey} stackId="a" fill={etnia.color} />
+									))
+								}
+    				  </BarChart>
+						</div>
 						<hr />
 					</div>
 					
@@ -203,7 +268,7 @@ function Graficos() {
 									<YAxis />
 									<Tooltip />
 									<Legend />
-									<Bar dataKey="Ocorrências" fill="#9B51E0" />
+									<Bar dataKey="Ocorrências" fill="#8044b7" />
 								</BarChart>
 							</div>
 						</div>
@@ -228,7 +293,7 @@ function Graficos() {
 									<YAxis />
 									<Tooltip />
 									<Legend />
-									<Bar dataKey="Ocorrências" fill="#3D2963" />
+									<Bar dataKey="Ocorrências" fill="#8044b7" />
 								</BarChart>
 							</div>
 							

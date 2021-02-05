@@ -1,336 +1,333 @@
 .graficos {
-	background: rgba(102, 51, 153, 0.1);
-	padding-top: 25px;
-	padding-bottom: 305px;
-	position: relative;
+  background: rgba(102, 51, 153, 0.1);
+  padding-top: 25px;
+  padding-bottom: 305px;
+  position: relative;
 }
 
 h1.texto-principal {
-	font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
-	line-height: 10px;
-	letter-spacing: -0.015em;
-	color: #000000;
-	margin-left: 200px;
-	margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 10px;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-left: 200px;
+  margin-top: 50px;
 }
 
 p.texto-secundario {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 26px;
-	letter-spacing: -0.015em;
-	margin-left: 200px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -0.015em;
+  margin-left: 200px;
 }
 
 p.tagline {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	letter-spacing: -0.015em;
-	color: #000000;
-	margin-left: 190px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-left: 190px;
 }
 
 .brasil {
-	margin-top: 70px;
-	text-align: center;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 800;
-	font-size: 30px;
-	line-height: 72px;
-	letter-spacing: -0.015em;
-	color: #9B51E0;
+  margin-top: 70px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 72px;
+  letter-spacing: -0.015em;
+  color: #9b51e0;
 }
-
 
 /* mapa */
 
 .grafico-violenciaestado {
-	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* Quantidade de casos por ano */
 
 .caso-ano {
-	margin-top: 55px;
-	text-align: center;
+  margin-top: 55px;
+  text-align: center;
 }
 
 .primeira-linhabr {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: -0.015em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
 }
 
 .before-select {
-	display: grid;
+  display: grid;
 }
 
 .select {
-	margin-left: 25px;
-	margin-top: 15px;
+  margin-left: 25px;
+  margin-top: 15px;
 }
 
 p.primeira-linha {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: -0.015em;
-	margin-left: 150px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
+  margin-left: 150px;
 }
 
 p.segunda-linha {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: -0.015em;
-	margin-bottom: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  margin-bottom: 50px;
 }
 
 .grafico-anobr {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	display: flex;
-	justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Violência por Estado */
 
 .violencia-estado {
-	text-align: center;
+  text-align: center;
 }
 
 .primeira-linhaes {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: -0.015em;
-	margin-top: 55px;
-	color: black;
-	margin-bottom: 0px;
-} 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
+  margin-top: 55px;
+  color: black;
+  margin-bottom: 0px;
+}
 
 .segunda-linhaes {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: -0.015em;
-	margin-top: 0px;
-	margin-bottom: 50px;
-	color: black;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: black;
 }
 
 .grafico-violenciaestado {
   display: flex;
-	justify-content: center;
-	margin-top: 50px;
-	margin-bottom: 80px;
-	margin-left: 200px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 200px;
 }
-
 
 /* Tipo de Violência */
 
 .violencia {
-	text-align: center;
+  text-align: center;
 }
 
 .primeira-linhavl {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: -0.015em;
-	margin-top: 55px;
-} 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
+  margin-top: 55px;
+}
 
 .segunda-linhavl {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: -0.015em;
-	margin-bottom: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  margin-bottom: 50px;
 }
 
 .grafico-violenciabr {
   display: flex;
-	justify-content: center;
-	margin-top: 50px;
-	margin-bottom: 80px;
-	margin-left: 200px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 200px;
 }
-
 
 /* Faixa etária mais afetada */
 
 .faixa-etaria {
-	text-align: center;
+  text-align: center;
 }
 
 p.terceira-linha {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: -0.015em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
 }
 /* Etnia mais afetada */
 
 .etnia {
-	text-align: center;
-	margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .grafico-etnia {
-	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* Etnia versus Ocorrencia */
 
 .etnia-ocorrencia {
-	text-align: center;
-	margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .grafico-etnia-ocorrencia {
-	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* casos ano pb */
 
 .paraiba {
-	margin-top: 70px;
-	margin-bottom: 70px;
-	text-align: center;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 800;
-	font-size: 30px;
-	line-height: 72px;
-	letter-spacing: -0.015em;
-	color: #9B51E0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 72px;
+  letter-spacing: -0.015em;
+  color: #9b51e0;
 }
 
 .primeira-linhapb {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: -0.015em;
-} 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
+}
 
 .caso-anopb {
-	margin-top: 55px;
-	text-align: center;
+  margin-top: 55px;
+  text-align: center;
 }
 
 .grafico-municipiopb {
-	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .faixaetaria-pb {
-	margin-top: 55px;
-	text-align: center;
+  margin-top: 55px;
+  text-align: center;
 }
 
 .grafico-idadepb {
-	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 /* select */
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	outline: 0;
-	box-shadow: none;
-	border: 0!important;
-	background-color: #9B51E0;
-	background-image: none;
-	flex: 1;
-	padding: 0 .5em;
-	color: whitesmoke;
-	cursor: pointer;
-	font-family: Montserrat;
-	font-style: normal;
-	font-size: 1.0em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-color: #9b51e0;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: whitesmoke;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 1em;
 }
 
 select::-ms-expand {
-	display: none;
+  display: none;
 }
 
 .select {
-		position: relative;
-		display: flex;
-		width: 20em;
-		height: 3em;
-		line-height: 3;
-		background: #9B51E0;
-		overflow: hidden;
-		border-radius: .25em;
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #9b51e0;
+  overflow: hidden;
+  border-radius: 0.25em;
 }
 
 .select::after {
-	content: '\25BC';
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 0 1em;
-	background:  #943de6;
-	cursor: pointer;
-	pointer-events: none;
-	transition: .25s all ease;
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #943de6;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
 }
 
 .select:hover::after {
-	color: whitesmoke;
+  color: whitesmoke;
 }
 
 /* imagens */
 
-.texto-inicial  {
-	position: relative;
+.texto-inicial {
+  position: relative;
 }
 
 .triangle-left {
-	width: 125px;
+  width: 125px;
   height: 400px;
   position: absolute;
   bottom: 0;
-	left: 0;
-	top: 0;
+  left: 0;
+  top: 0;
 }
