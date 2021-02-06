@@ -9,6 +9,7 @@ import violenciaBr from '../../../data/violencia-brasil.json'
 import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Pie, PieChart, Sector
 } from 'recharts';
+import MapChart from '../MapChart'
 import './index.css'
 
 const cities = ['Joao Pessoa', 'Campina Grande', 'Bayeux', 'Santa Rita', 'Patos']
@@ -165,10 +166,11 @@ function Graficos() {
 						<h1>BRASIL</h1>
 						<div className="violencia">
 							<div className="violencia-estado">
-								<p className="primeira-linhaes">Estado com mais ocorrências:</p>
+								<p className="primeira-linhaes">Ocorrências por Estado:</p>
 								<p className="segunda-linhaes">Entre os anos 2009 - 2018</p>
 							</div>
 							<div className="grafico-violenciaestado">
+								<MapChart/>
 							</div>
 						</div>
 						<hr />

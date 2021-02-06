@@ -136,11 +136,11 @@ p.segunda-linha {
 }
 
 .grafico-violenciaestado {
+  text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 80px;
-  margin-left: 200px;
 }
 
 /* Tipo de Violência */
