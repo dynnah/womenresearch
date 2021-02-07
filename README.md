@@ -34,4 +34,4 @@ yarn install
 yarn start
 ```
 ## Deploy
-- Link: 
+- Link: https://nossavoz.netlify.app/
